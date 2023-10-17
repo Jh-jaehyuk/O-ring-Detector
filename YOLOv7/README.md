@@ -1,8 +1,8 @@
 # Machine Learning - (Model : YOLOv7)
 
-### 주의 사항 ⚠️
+### 주의 사항 ‼️
 * 여기서는 [링크](https://github.com/WongKinYiu/yolov7) 의 파일들을 "C:/Users/{Username}"에 넣고 진행함
-* 파일들을 다운받은 후에 필수 라이브러리 설치 필요
+* 파일들을 다운받은 후에 필수 라이브러리 설치 필요   
     ```
     pip install -r requirements.txt
     ```
@@ -15,8 +15,8 @@
    * yolov7-custom.yaml   
 2. Train 데이터 만들기
    * data.zip/train/images
-   * data.zip/train/labels
-     - labelImg 를 이용한 라벨링   
+   * data.zip/train/labels   
+     - labelImg 를 이용한 라벨링
        ```
        pip install labelImg # 설치
        labelmg # 실행
@@ -42,14 +42,14 @@
        --weights yolo7-tiny.pt : 가중치의 위치
    * 여기서는 노트북 성능이 좋지 않아 **batch-size, epoch, model, weights 전부 기본보다 낮추어 사용**   
 4. YOLO 구동 및 Model 신뢰도 평가
-   * YOLOv7_test.jpg
+   * YOLOv7_test.jpg   
      - 사진에서 사각형 위쪽의 왼쪽이 레이블, 오른쪽이 신뢰도
      - 레이블은 정상적으로 O-ring이라고 표시
      - 그러나, 신뢰도가 0.3 후반에서 0.7까지 들쑥날쑥함
 
 </br>
 
-### 문제점 :cross
+### 문제점 :x:
 1. 학습시킨 모델의 성능이 낮아서 인식은 되지만 낮은 신뢰도를 보여줌.
    * 이는 컴퓨터의 성능을 개선하여 높은 성능의 모델과 가중치를 이용하면 개선될 것으로 생각됨
 2. 신뢰도를 수정한 이후에 어느정도 작은 불량까지 검출할 수 있는지 확인되지 않음.
