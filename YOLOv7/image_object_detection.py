@@ -4,7 +4,7 @@ from imread_from_url import imread_from_url
 from yolov7 import YOLOv7
 
 # Initialize yolov7 object detector
-model_path = "models/yolov7_post_640x640.onnx"
+model_path = "models/yolov7-tiny_640x640.onnx"
 yolov7_detector = YOLOv7(model_path, conf_thres=0.2, iou_thres=0.3)
 
 # Read image
